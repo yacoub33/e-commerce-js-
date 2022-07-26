@@ -20,9 +20,13 @@
         <div class="nav__container">
           <img class="logo" src="assets/Library.svg" alt="" />
           <ul class="nav__links">
-            <li><a href="#" class="nav__link">Home</a></li>
+            <li><a href="/index.html" class="nav__link">Home</a></li>
             <li><a href="#" class="nav__link">Contact</a></li>
-            <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
+            <li>
+              <a href="#books__main" class="nav__link nav__link--primary"
+                >Books</a
+              >
+            </li>
           </ul>
           <button class="btn__menu" onclick="openMenu()">
             <i class="fas fa-bars"></i>
@@ -66,7 +70,9 @@
                 <option value="RATING">Rating</option>
               </select>
             </div>
-            <div class="books"></div>
+            <div class="books books__loading">
+              <i class="fas fa-spinner books__loading--spinner"></i>
+            </div>
           </div>
         </div>
       </section>
@@ -81,9 +87,9 @@
             </figure>
           </a>
           <div class="footer__list">
-            <a href="#" class="footer__link">Home</a>
+            <a href="/index.html" class="footer__link">Home</a>
             <a class="footer__link no-cursor">About</a>
-            <a href="#features" class="footer__link">Books</a>
+            <a href="#books__main" class="footer__link">Books</a>
             <a class="footer__link no-cursor">Contact</a>
           </div>
           <div class="footer__copyright">Copyright &copy; 2021 Library</div>
